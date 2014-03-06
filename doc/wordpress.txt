@@ -1,0 +1,14 @@
+This project was made to demonstrate a point.  A student said that they doubted I could make a simple application in an afternoon, so within about an hour I had made this is.  It takes a string from the user and makes a phrase using word from the Eye of Argon to make an initialisation.
+
+<h3>Links</h3>
+
+<a href="http://www.aidansean.com/eye_of_argon/">Live page</a>
+<a href="https://github.com/aidansean/eye_of_argon">GitHub repository</a>
+
+<h3>Challenges</h3>
+
+<dl>
+<dt><em>Challenge</em>: The numbers of words in the Eye of Argon is larger than 10,000, which could slow down performance.</dt>
+
+<dd><em>Solution</em>: The words were sorted alphabetically, with duplicates removed, and words with fewer than three letters removed. (Resolved)</dd>
+</dl>

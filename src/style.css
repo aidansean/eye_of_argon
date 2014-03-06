@@ -1,0 +1,19 @@
+.submit{ border : 1px solid black ; }
+p#acronym{
+  text-align : center ;
+  font-family : arial , sans-serif ;
+}
+table
+{
+  background-color : #eeffee ;
+  background-color : #eeeeee ;
+  width : 100% ;
+}
+th{
+  background-color : #ccffcc ;
+  background-color : #cccccc ;
+}
+td, th{
+  font-family : arial , sans-serif ;
+  text-align : center ;
+}
