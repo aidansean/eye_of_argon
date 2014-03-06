@@ -1,6 +1,6 @@
 from project_module import project_object, image_object, link_object, challenge_object
 
-p = project_object('eye_of_argon')
+p = project_object('eye_of_argon', 'Eye of Argon acronym generator')
 p.domain = 'http://www.aidansean.com/'
 p.path = 'eye_of_argon'
 p.preview_image_ = image_object('http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg', 408, 287)
@@ -11,5 +11,3 @@ p.introduction = 'This project was made to demonstrate a point.  A student said 
 p.overview = ''
 
 p.challenges.append(challenge_object('The numbers of words in the Eye of Argon is larger than 10,000, which could slow down performance.', 'The words were sorted alphabetically, with duplicates removed, and words with fewer than four letters are removed.', 'Resolved'))
-
-print p.wordpress_text()
