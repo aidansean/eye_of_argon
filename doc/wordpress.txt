@@ -10,5 +10,5 @@ This project was made to demonstrate a point.  A student said that they doubted 
 <dl>
 <dt><em>Challenge</em>: The numbers of words in the Eye of Argon is larger than 10,000, which could slow down performance.</dt>
 
-<dd><em>Solution</em>: The words were sorted alphabetically, with duplicates removed, and words with fewer than three letters removed. (Resolved)</dd>
+<dd><em>Solution</em>: The words were sorted alphabetically, with duplicates removed, and words with fewer than four letters are removed. (Resolved)</dd>
 </dl>
