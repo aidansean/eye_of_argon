@@ -6,6 +6,7 @@ mysql_select_db($mysql_database) or die('Could not select database') ;
 
 $title = 'Eye of Argon acronymer' ;
 $stylesheets = array('style.css') ;
+include_once('project.php') ;
 include_once($_SERVER['FILE_PREFIX'] . '/_core/preamble.php') ;
 ?>
 
@@ -15,7 +16,7 @@ include_once($_SERVER['FILE_PREFIX'] . '/_core/preamble.php') ;
 
 <h3>Make your own acronym</h3>
 <form action="index.php" method="post">
-<p class="center">Acronym: <input type="text" name="acronym" value="<?php echo strtoupper($_POST['acronym']) ; ?>"/>
+<p class="center">Acronym: <input type="text" name="acronym" value=""/>
 <input type="submit" class="submit" value="Query bustily?"/></p>
 </form>
 
@@ -59,8 +60,10 @@ if(isset($_POST['acronym'])){
 <?php
 $query = 'SELECT * FROM ' .  $mysql_prefix . 'eye_of_argon_acronym ORDER BY edited DESC LIMIT 50' ;
 $result = mysql_query($query) ;
-while($row=mysql_fetch_assoc($result)){
-  if($row['acronym']!='') echo '<tr><th>' , $row['acronym'] , '</th><td>' , $row['text'] , '</td></tr>' , PHP_EOL ;
+if($result){
+  while($row=mysql_fetch_assoc($result)){
+    if($row['acronym']!='') echo '<tr><th>' , $row['acronym'] , '</th><td>' , $row['text'] , '</td></tr>' , PHP_EOL ;
+  }
 }
 echo '</tbody></table>' ;
 
